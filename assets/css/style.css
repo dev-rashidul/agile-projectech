@@ -40,7 +40,7 @@ img {
   position: relative;
   font-family: "Exo 2", serif;
   font-size: 16px;
-  padding: 15px 40px;
+  padding: 13px 40px;
   color: #fff;
   background: linear-gradient(
     90deg,
@@ -69,11 +69,7 @@ img {
 /* Header Part CSS Start */
 
 nav.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
   padding: 20px 0;
-  z-index: 999;
 }
 
 .navbar__container {
@@ -208,6 +204,7 @@ nav.navbar {
   height: 110vh;
   display: flex;
   align-items: center;
+  margin-top: -117px;
 }
 
 .hero__wrapper::after {
@@ -353,5 +350,61 @@ nav.navbar {
 }
 
 /* Vison Mission Section CSS End */
+
+/* Service Section CSS Start */
+
+.services__wrapper {
+  padding: 120px 0;
+}
+
+.services__top {
+  max-width: 820px;
+  margin: auto;
+  text-align: center;
+}
+
+.services__top h2 {
+  font-family: "Exo 2", serif;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 115.385%;
+  text-transform: capitalize;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 30px;
+}
+
+.services__top h2 span {
+  background: linear-gradient(
+    90deg,
+    rgba(147, 83, 245, 0.8) 14.87%,
+    rgba(27, 200, 218, 0.8) 85.87%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.services__content h3 {
+  font-family: "Exo 2", serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 120%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.services__img img {
+  max-width: 423px;
+}
+
+.services__gif {
+  position: absolute;
+  top: -1%;
+  right: 9%;
+  width: 82%;
+  z-index: -1;
+}
+
+/* Service Section CSS End */
 
 /* Main Part CSS End */
