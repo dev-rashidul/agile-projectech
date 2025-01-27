@@ -50,6 +50,26 @@
     font-size: 16px;
   }
 
+  .about__img {
+    margin-top: 30px;
+  }
+
+  .about__shape1 {
+    top: 4%;
+  }
+
+  .about__shape2 {
+    top: 10%;
+  }
+
+  .about__shape3 {
+    bottom: -14%;
+  }
+
+  .about__shape4 {
+    bottom: -12%;
+  }
+
   .vision-mission__wrapper {
     text-align: center;
     background-position: center center;
