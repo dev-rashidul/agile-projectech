@@ -1,0 +1,357 @@
+/* Base Style CSS Start */
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Exo 2", serif;
+  font-family: "Roboto", serif;
+  background: #0e102c;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.primary__btn a,
+.section__tag span {
+  position: relative;
+  font-family: "Exo 2", serif;
+  font-size: 16px;
+  padding: 15px 40px;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(27, 200, 218, 0.8) 0%,
+    rgba(88, 37, 121, 0.8) 100%
+  );
+  box-shadow: 0px 0px 6px 3px rgba(255, 255, 255, 0.07) inset;
+  backdrop-filter: blur(7px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 100px;
+}
+.primary__btn a:after,
+.section__tag span:after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -6px;
+  width: 106%;
+  height: 119%;
+  border-radius: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Base Style CSS End */
+
+/* Header Part CSS Start */
+
+nav.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 999;
+}
+
+.navbar__container {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12.5px);
+  border: 1px solid rgba(215, 60, 190, 0.5);
+  border-radius: 60px;
+}
+
+.nav-link,
+.nav-link:hover,
+.nav-link:focus {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 0 15px !important;
+}
+
+.navbar-nav .nav-link.show {
+  color: #ffffff;
+}
+
+.dropdown-menu {
+  background: #0e102c;
+}
+
+.navbar-expand-xl .navbar-nav .dropdown-menu {
+  top: 35px;
+}
+
+.dropdown-item {
+  color: #ffffff;
+  padding: 10px 20px;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.navbar-toggler {
+  border: 0 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+.toggler-icon {
+  width: 25px;
+  height: 2px;
+  background-color: #e74c3c;
+  display: block;
+  transition: all 0.2s;
+}
+
+.middle-bar {
+  margin: 5px auto;
+}
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .toggler-icon {
+  background-color: #ffffff;
+}
+
+.nav-buttons img {
+  width: 20px;
+}
+
+@media (max-width: 1200px) {
+  .navbar__container {
+    border-radius: 0;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .navbar-nav {
+    padding-top: 20px;
+  }
+
+  .navbar-nav.ml-auto {
+    padding-bottom: 50px;
+  }
+
+  .nav-link {
+    padding: 10px 0 !important;
+  }
+
+  .nav-link.dropdown-toggle {
+    padding: 10px 0 !important;
+  }
+}
+
+/* Hero Section CSS Start */
+
+.hero__wrapper {
+  position: relative;
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero__wrapper::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 114px;
+  background: linear-gradient(0deg, #0e102c 0%, rgba(14, 16, 44, 0) 100%);
+}
+
+.hero__content {
+  max-width: 523px;
+}
+
+.hero__content h1 {
+  font-family: "Exo 2", serif;
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 112.5%;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+}
+
+.hero__content h1 span {
+  color: #c437af;
+}
+
+.hero__content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 162.5%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.hero__btn {
+  padding-top: 40px;
+}
+
+.bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 110vh;
+  object-fit: cover;
+}
+
+/* Hero Section CSS End */
+
+/* Header Part CSS End */
+
+/* Main Part CSS Start */
+
+/* About Us Section CSS Start */
+
+.about__wrapper {
+  padding: 150px 0;
+}
+
+.about__content h2 {
+  font-family: "Exo 2", serif;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 115.385%;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 35px 0 25px;
+  margin-bottom: 0;
+}
+
+.about__content h2 span {
+  background: linear-gradient(
+    90deg,
+    rgba(147, 83, 245, 0.8) 0.17%,
+    rgba(27, 200, 218, 0.8) 53.67%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about__content p {
+  font-size: 18px;
+  line-height: 144.444%;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0;
+}
+
+/* About Us Section CSS End */
+
+/* Vison Mission Section CSS Start */
+
+.vision-mission__wrapper {
+  position: relative;
+  background: url(../images/vision-mission-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+}
+
+.vision-mission__wrapper::before,
+.vision-mission__wrapper::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 100%;
+  height: 210px;
+  background: linear-gradient(0deg, #0e102c 0%, rgba(14, 16, 44, 0) 100%);
+}
+
+.vision-mission__wrapper::before {
+  top: 0;
+  background: linear-gradient(0deg, rgba(14, 16, 44, 0) 0%, #0e102c 100%);
+}
+
+.vision-mission__wrapper::after {
+  bottom: 0;
+}
+
+.vision-mission__content {
+  position: relative;
+}
+
+.vision-mission__content h2 {
+  font-family: "Exo 2", serif;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 160%;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+}
+
+.vision-mission__content p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 144.444%;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0;
+}
+
+/* Vison Mission Section CSS End */
+
+/* Main Part CSS End */
