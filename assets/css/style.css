@@ -36,7 +36,8 @@ img {
 }
 
 .primary__btn a,
-.section__tag span {
+.section__tag span,
+.form__submit__btn button {
   position: relative;
   font-family: "Exo 2", serif;
   font-size: 16px;
@@ -53,8 +54,9 @@ img {
   border-radius: 100px;
 }
 
-.primary__btn a:after,
-.section__tag span:after {
+.primary__btn a::after,
+.section__tag span::after,
+.form__submit__btn button::after {
   position: absolute;
   content: "";
   top: -6px;
@@ -357,7 +359,9 @@ nav.navbar {
 }
 
 .vision-mission__wrapper::before,
-.vision-mission__wrapper::after {
+.contact__wrapper::before,
+.vision-mission__wrapper::after,
+.contact__wrapper::after {
   position: absolute;
   content: "";
   left: 0;
@@ -366,12 +370,14 @@ nav.navbar {
   background: linear-gradient(0deg, #0e102c 0%, rgba(14, 16, 44, 0) 100%);
 }
 
-.vision-mission__wrapper::before {
+.vision-mission__wrapper::before,
+.contact__wrapper::before {
   top: 0;
   background: linear-gradient(0deg, rgba(14, 16, 44, 0) 0%, #0e102c 100%);
 }
 
-.vision-mission__wrapper::after {
+.vision-mission__wrapper::after,
+.contact__wrapper::after {
   bottom: 0;
 }
 
@@ -643,5 +649,70 @@ nav.navbar {
 }
 
 /* Industries Section CSS End */
+
+/* Contact Section CSS Start */
+
+.contact__wrapper {
+  position: relative;
+  background: url(../images/contact-us-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 120px 0;
+}
+
+.contact__img,
+.contact__form__container {
+  position: relative;
+  z-index: 1;
+}
+
+.contact__form-content h2 {
+  font-family: "Exo 2", serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0;
+}
+
+.contact__form-content p {
+  font-size: 16px;
+  line-height: 162.5%;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0;
+}
+
+.contact__form {
+  padding-top: 50px;
+}
+
+.form__input__filed,
+.form__textarea__field {
+  margin-bottom: 25px;
+}
+
+.form__input__filed input,
+.form__textarea__field textarea {
+  width: 100%;
+  color: #ffffff;
+  background: transparent;
+  padding: 5px 10px 10px;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+
+.form__input__filed input:focus,
+.form__textarea__field textarea:focus {
+  outline: 0;
+}
+
+.contact__form ::placeholder {
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Contact Section CSS End */
 
 /* Main Part CSS End */
