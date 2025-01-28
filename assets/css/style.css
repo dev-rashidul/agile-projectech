@@ -70,6 +70,7 @@ img {
 
 nav.navbar {
   padding: 20px 0;
+  z-index: 999;
 }
 
 .navbar__container {
@@ -482,5 +483,85 @@ nav.navbar {
 }
 
 /* Service Section CSS End */
+
+/* FAQ Section CSS Start */
+
+.faq__content {
+  position: relative;
+}
+
+.faq__content h2 {
+  font-family: "Exo 2", serif;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 121.429%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.accordion-item {
+  position: relative;
+  margin: 30px 0;
+  padding: 25px 30px !important;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(22px);
+  border-radius: 30px !important;
+  border: 1px solid transparent;
+  background-clip: padding-box;
+}
+
+.accordion-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  padding: 1px;
+  background: linear-gradient(90deg, #2d667e, #4d317f);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  font-family: "Exo 2", serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+  border-bottom: 1px solid transparent !important;
+}
+
+.accordion-button:focus,
+.accordion-button:not(.collapsed):focus {
+  box-shadow: none;
+  border: none;
+}
+
+.accordion-button::after {
+  background-image: url(../images/chevron-down.svg);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../images/chevron-up.svg);
+  transform: rotate(0deg);
+}
+
+.accordion-body {
+  padding: 0;
+  padding-top: 20px;
+}
+
+.accordion-body p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* FAQ Section CSS End */
 
 /* Main Part CSS End */

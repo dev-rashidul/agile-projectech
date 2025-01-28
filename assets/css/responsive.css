@@ -45,12 +45,15 @@
 
   .about__content h2,
   .vision-mission__content h2,
-  .services__top h2 {
+  .services__top h2,
+  .faq__content h2 {
     font-size: 48px;
   }
 
   .about__content p,
-  .vision-mission__content p {
+  .vision-mission__content p,
+  .services__content p,
+  .services__content ul li {
     font-size: 16px;
   }
 
@@ -103,8 +106,8 @@
     font-size: 36px;
   }
 
-  .services__content p,
-  .services__content ul li {
-    font-size: 16px;
+  .accordion-button,
+  .accordion-button:not(.collapsed) {
+    font-size: 18px;
   }
 }
