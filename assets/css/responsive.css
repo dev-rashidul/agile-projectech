@@ -36,7 +36,7 @@
 
   .hero__wrapper,
   .bg__video {
-    height: 80vh;
+    height: 100vh;
   }
 
   .about__wrapper {
@@ -44,7 +44,8 @@
   }
 
   .about__content h2,
-  .vision-mission__content h2 {
+  .vision-mission__content h2,
+  .services__top h2 {
     font-size: 48px;
   }
 
@@ -81,6 +82,7 @@
 
   .services__img {
     max-width: 423px;
+    margin-top: 50px;
   }
 
   .services__img img {
@@ -91,5 +93,18 @@
     top: 0;
     right: 1%;
     width: 95%;
+  }
+
+  .services__gif.rotate {
+    left: 0;
+  }
+
+  .services__content h3 {
+    font-size: 36px;
+  }
+
+  .services__content p,
+  .services__content ul li {
+    font-size: 16px;
   }
 }
