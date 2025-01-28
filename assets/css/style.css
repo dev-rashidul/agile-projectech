@@ -352,7 +352,7 @@ nav.navbar {
 
 .vision-mission__wrapper {
   position: relative;
-  background: url(../images/vision-mission-bg.png);
+  background: url(../images/vision-mission-bg.gif);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 150px 0;
@@ -654,7 +654,7 @@ nav.navbar {
 
 .contact__wrapper {
   position: relative;
-  background: url(../images/contact-us-bg.png);
+  background: url(../images/contact-us-bg.gif);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -721,7 +721,7 @@ nav.navbar {
 
 .footer__wrapper {
   position: relative;
-  background: url(../images/footer-bg.png);
+  background: url(../images/contact-us-bg.gif);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
