@@ -52,14 +52,15 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 100px;
 }
+
 .primary__btn a:after,
 .section__tag span:after {
   position: absolute;
   content: "";
-  top: -5px;
-  left: -6px;
+  top: -6px;
+  left: -5px;
   width: 106%;
-  height: 119%;
+  height: 126%;
   border-radius: 42px;
   border: 1px solid rgba(255, 255, 255, 0.15);
 }
@@ -432,6 +433,10 @@ nav.navbar {
   -webkit-text-fill-color: transparent;
 }
 
+.services__tag span::after {
+  width: 108%;
+}
+
 .service__container {
   padding-top: 60px;
 }
@@ -501,7 +506,7 @@ nav.navbar {
 .accordion-item {
   position: relative;
   margin: 30px 0;
-  padding: 25px 30px !important;
+  padding: 20px 25px !important;
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(22px);
   border-radius: 30px !important;
@@ -563,5 +568,80 @@ nav.navbar {
 }
 
 /* FAQ Section CSS End */
+
+/* Industries Section CSS Start */
+
+.industries__wrapper {
+  padding: 120px 0;
+}
+
+.industries__top {
+  max-width: 1050px;
+  margin: auto;
+  text-align: center;
+}
+
+.industries__top h2 {
+  font-family: "Exo 2", serif;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 115.385%;
+  text-transform: capitalize;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  padding-top: 30px;
+}
+
+.industries__top h2 span {
+  background: linear-gradient(
+    90deg,
+    rgba(147, 83, 245, 0.8) 14.87%,
+    rgba(27, 200, 218, 0.8) 85.87%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.industries__top p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0;
+}
+
+.industries__card {
+  height: 100%;
+  border: 0.862px solid #256377;
+  border-radius: 10px;
+}
+
+.industries__card-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.industries__card-content {
+  padding: 14px;
+  /* border: 0.862px solid #256377;
+  border-top: none;
+  border-radius: 0px 0px 10px 10px; */
+}
+
+.industries__card-content h5 {
+  font-family: "Exo 2", serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #c437af;
+  margin-bottom: 5px;
+}
+
+.industries__card-content p {
+  font-size: 16px;
+  line-height: 162.5%;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0;
+}
+
+/* Industries Section CSS End */
 
 /* Main Part CSS End */
