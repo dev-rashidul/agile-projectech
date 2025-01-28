@@ -1,6 +1,9 @@
 /* Min Width 1201px and Max Width 1399400*/
 
 @media (min-width: 1201px) and (max-width: 1400px) {
+  .services__gif.rotate {
+    left: -8%;
+  }
 }
 
 /* Min Width 993px and Max Width 1199200*/
@@ -74,5 +77,19 @@
     text-align: center;
     background-position: center center;
     padding: 100px 0;
+  }
+
+  .services__img {
+    max-width: 423px;
+  }
+
+  .services__img img {
+    width: 100%;
+  }
+
+  .services__gif {
+    top: 0;
+    right: 1%;
+    width: 95%;
   }
 }
