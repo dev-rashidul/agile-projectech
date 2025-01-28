@@ -114,4 +114,12 @@
   .accordion-button:not(.collapsed) {
     font-size: 18px;
   }
+
+  .footer__content {
+    padding-top: 60px;
+  }
+
+  .footer__copyright p {
+    font-size: 16px;
+  }
 }
