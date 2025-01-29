@@ -115,6 +115,10 @@
     font-size: 18px;
   }
 
+  .footer__wrapper {
+    margin-top: 0;
+  }
+
   .footer__content {
     padding-top: 60px;
   }
