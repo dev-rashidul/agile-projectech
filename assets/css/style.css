@@ -721,7 +721,7 @@ nav.navbar {
 
 .footer__wrapper {
   position: relative;
-  background: url(../images/contact-us-bg.gif);
+  background: url(../images/footer-bg.gif);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -798,6 +798,7 @@ nav.navbar {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(12.5px);
   border-radius: 60px !important;
+  padding: 0 20px;
   border: 1px solid transparent;
   background-clip: padding-box;
 }
